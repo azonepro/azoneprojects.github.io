@@ -53,7 +53,7 @@
 
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
   <style>
@@ -105,13 +105,14 @@
 
         .social1-toggle {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
     z-index: 9999;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     background-color: transparent;
+    margin-top: 0; /* Remove top margin for mobile */
 }
 
 
@@ -133,6 +134,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    
 }
 
 .toggle-button img {
@@ -144,6 +147,28 @@
     background-color: #f2f2f200;
     color: #333;
 }
+
+
+/* Styles for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .social1-toggle {
+        bottom: 20px; /* Adjust the distance from the bottom for mobile */
+        flex-direction: row; /* Display buttons horizontally */
+        align-items: center; /* Center buttons horizontally */
+        justify-content: flex-end; /* Align buttons to the right */
+    }
+    
+    .social1-buttons {
+        flex-direction: row; /* Display social icons horizontally */
+    }
+    
+    .toggle-button {
+        margin-top: 0; /* Remove top margin for mobile */
+    }
+}
+
+
+
 
 .social1-toggle.active .social1-buttons {
     display: flex;
