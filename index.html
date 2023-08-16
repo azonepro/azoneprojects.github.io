@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Azone Projects - Premium Marketing services & Assignment Help in UAE</title>
+  <title>Azone Projects</title>
     <!-- Site Metas -->
-  
-    <meta name="keywords" content="assignment help in UAE, assignment help in Dubai, graduation projects, advertisement services, graphics and animation, digital marketing, UAE, SEO in Dubai , Web Design, Web Development, WordPress dubai, Project help, Marketing Services in UAE">
-    <meta name="description" content="Elevate Your Academic Excellence with Azone Projects. Our commitment resonates in offering unparalleled assignment assistance, innovative creative services, and dynamic digital marketing solutions in the UAE. Connect with us today to embark on your journey towards success!">
+    <title>Azone Projects - Premium Assignment Help & Creative Services</title>
+    <meta name="keywords" content="assignment help, graduation projects, advertisement services, graphics and animation, digital marketing, UAE">
+    <meta name="description" content="Boost your academic success with Azone Projects. We provide premium assignment help, creative services, and digital marketing solutions in UAE. Contact us now!">
     <meta name="author" content="Azone Projects">
     
     <!-- OpenGraph meta tags for social media -->
@@ -25,7 +25,8 @@
     <meta name="twitter:image" content="your-share-image-url.jpg">
     
     <!-- Other meta tags for SEO optimization 
-
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <!-- Favicons -->
@@ -36,7 +37,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -646,7 +646,7 @@
         </div>
 
         <div>
-        
+         <!--   <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>-->
           <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.5307249606412!2d55.45548067461995!3d25.319966077632124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f26195b7e6b%3A0xc0f6d4eb509bdf75!2sSPC%20Free%20Zone!5e0!3m2!1sen!2sae!4v1691795458232!5m2!1sen!2sae" frameborder="0" allowfullscreen></iframe>
         </div>
 
@@ -678,7 +678,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form id ="submit-form" action="" >
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -688,11 +688,10 @@
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="tel" class="form-control" name="phoneno" id="phoneno" placeholder="Phone Number" pattern="[+][0-9]{1,3}[0-9]{6,}" title="Please enter a valid phone number with country code (e.g., +1234567890)" required>
-
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" id ="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -840,27 +839,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Social Toggal -->
-<script src="assets/js/main.js"></script>
-  <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbykj7L2u18So2_m46BjbKl42ghkWH-xcjL20QLdjvh23EXa6Rl3pXSW24QdBGIhYQTm/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Message Send successfully, will contact you soon")
-  window.location.reload()
-  //window.location.href="https://google.com"
-},
-error:function (err){
-  alert("Something Error")
-
-}
-})
-})
-</script>
-     
 <script>
 
 
@@ -910,7 +888,26 @@ error:function (err){
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
- 
+  <script src="assets/js/main.js"></script>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzBsX3XZcRUjXJJwGWoYVCzW1hQj_wtApGO1l8Mom9_Ndsn0iGuMbfvEYO6nTWHbNcE/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Message Send successfully, will contact you soon")
+  window.location.reload()
+  //window.location.href="https://google.com"
+},
+error:function (err){
+  alert("Something Error")
+
+}
+})
+})
+</script>
 
 
 
