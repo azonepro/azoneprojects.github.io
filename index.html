@@ -677,7 +677,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form id = "gform" action="https://script.google.com/macros/s/AKfycbykj7L2u18So2_m46BjbKl42ghkWH-xcjL20QLdjvh23EXa6Rl3pXSW24QdBGIhYQTm/exec" >
+            <form id = "submit-form" action="https://script.google.com/macros/s/AKfycbykj7L2u18So2_m46BjbKl42ghkWH-xcjL20QLdjvh23EXa6Rl3pXSW24QdBGIhYQTm/exec" >
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -893,7 +893,7 @@
     $("#submit-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbzBsX3XZcRUjXJJwGWoYVCzW1hQj_wtApGO1l8Mom9_Ndsn0iGuMbfvEYO6nTWHbNcE/exec",
+            url:"https://script.google.com/macros/s/AKfycbykj7L2u18So2_m46BjbKl42ghkWH-xcjL20QLdjvh23EXa6Rl3pXSW24QdBGIhYQTm/exec",
             data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
