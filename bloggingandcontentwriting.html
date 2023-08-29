@@ -236,6 +236,24 @@
     color: #333;
 }
 
+     
+  #google_translate_element {
+    position: fixed;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    z-index: 1000; /* Ensure the widget is above other content */
+  }
+
+  /* Change the color of the widget's button to violet */
+  #google_translate_element select.goog-te-combo {
+    background-color: #994eef;
+    color: white;
+  }
+
+  /* Limit the width of the widget to prevent overlap */
+  #google_translate_element iframe.goog-te-banner-frame {
+    max-width: 250px; /* Adjust the maximum width as needed */
+  }
 </style>
 
 </head>
