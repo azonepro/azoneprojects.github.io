@@ -1391,6 +1391,7 @@ section {
   background: whitesmoke;
   min-height: 40px;
   margin-top: 74px;
+  padding-top:5%;
 }
 
 .breadcrumbs h2 {
